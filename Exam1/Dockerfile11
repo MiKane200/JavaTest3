@@ -1,0 +1,4 @@
+From registry.saas.hand-china.com/hap-cloud/base:latest
+
+COPY ../Exam1/target/Exam1-1.0-SNAPSHOT-jar-with-dependencies.jar Exam1-1.0-SNAPSHOT-jar-with-dependencies.jar.jar
+RUN java -cp Exam1-1.0-SNAPSHOT-jar-with-dependencies.jar com.hand.App

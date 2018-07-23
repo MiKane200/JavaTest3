@@ -1,0 +1,24 @@
+version: "3"
+services:
+  mysqltest:
+    container_name: mysqltest
+    image: registry.saas.hand-china.com/hmap/mysql:latest
+    ports:
+    - "3306:3306"
+    environment:
+      MYSQL_ROOT_PASSWORD: 123456
+
+    expose:
+    - "3306"
+  
+#  exam1:
+#    container_name: exam1
+#    image: exam1
+#    environment:
+#          MYSQL_ROOT_USER: root
+#          MYSQL_ROOT_PASSWORD: 123456
+#          IP: 192.168.99.100
+#          PORT: 3306
+#          DATABASENAME: sakila
+#          COUNTRYID: 6
+#          CUSTOMERID: 1
